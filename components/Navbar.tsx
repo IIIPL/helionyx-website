@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
@@ -46,21 +47,28 @@ export default function Navbar() {
     return (
         <header
             className={cn(
-                "fixed top-0 left-0 right-0 z-50 transition-all duration-500 ease-in-out",
+                "fixed top-0 left-0 right-0 z-[100] transition-all duration-500 ease-in-out",
                 isOpen
-                    ? "bg-transparent py-3"
+                    ? "bg-transparent py-2 lg:py-3"
                     : scrolled
-                        ? "bg-white/90 backdrop-blur-md border-b border-helionyx-border py-3 shadow-sm"
-                        : "bg-transparent py-6"
+                        ? "bg-white/90 backdrop-blur-md border-b border-helionyx-border py-2 lg:py-3 shadow-sm"
+                        : "bg-transparent py-4 lg:py-6"
             )}
         >
             <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
-                {/* Logo - White initially (over dark hero), Dark when scrolled */}
+                {/* Logo - Image that adapts to scroll state */}
                 <Link href="/" className={cn(
-                    "text-2xl font-bold tracking-tighter z-50 transition-colors",
-                    scrolled || isOpen ? "text-slate-900" : "text-white"
+                    "z-50 transition-all h-10 lg:h-14 flex items-center",
+                    scrolled || isOpen ? "opacity-100" : "opacity-100"
                 )}>
-                    HELIONYX
+                    <Image
+                        src="/images/logo.jpeg"
+                        alt="Helionyx Logo"
+                        width={180}
+                        height={56}
+                        priority
+                        className="h-10 lg:h-14 w-auto"
+                    />
                 </Link>
 
                 {/* Desktop Nav */}
@@ -109,7 +117,7 @@ export default function Navbar() {
                                 animate={{ opacity: 1 }}
                                 exit={{ opacity: 0 }}
                                 transition={{ duration: 0.3 }}
-                                className="fixed inset-0 bg-black/60 z-[40]"
+                                className="fixed inset-0 bg-black/40 z-[99]"
                                 onClick={() => setIsOpen(false)}
                             />
 
@@ -119,7 +127,7 @@ export default function Navbar() {
                                 animate={{ opacity: 1, y: 0, scale: 1 }}
                                 exit={{ opacity: 0, y: -10, scale: 0.95 }}
                                 transition={{ duration: 0.2, ease: "easeOut" }}
-                                className="absolute top-[calc(100%+0.5rem)] left-4 right-4 bg-white/95 backdrop-blur-xl rounded-2xl shadow-2xl z-[50] overflow-hidden border border-white/20"
+                                className="absolute top-[calc(100%+0.5rem)] left-4 right-4 bg-white/95 backdrop-blur-xl rounded-2xl shadow-2xl z-[101] overflow-hidden border border-white/20"
                             >
                                 <nav className="flex flex-col py-6 px-2">
                                     {NAV_ITEMS.map((item, i) => (

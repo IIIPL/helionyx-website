@@ -7,7 +7,7 @@ import { ArrowRight, Play } from "lucide-react";
 
 export default function AnimatedHero() {
     return (
-        <div className="relative h-[100dvh] min-h-[600px] flex items-center justify-center overflow-hidden bg-slate-900">
+        <div className="relative h-[100dvh] min-h-[600px] flex items-center justify-center overflow-hidden bg-slate-800">
             {/* 🔹 BACKGROUND VIDEO */}
             <div className="absolute inset-0 z-0">
                 <video

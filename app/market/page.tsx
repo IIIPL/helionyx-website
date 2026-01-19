@@ -15,7 +15,7 @@ export default function MarketPage() {
             <Navbar />
 
             {/* 🔹 HERO SECTION (IMAGE + DARK OVERLAY) */}
-            <div className="relative h-[100dvh] min-h-[600px] flex items-center justify-center overflow-hidden bg-slate-900">
+            <div className="relative h-[100dvh] min-h-[600px] flex items-center justify-center overflow-hidden bg-slate-800">
                 {/* Background Video */}
                 <div className="absolute inset-0 z-0">
                     <video
@@ -361,7 +361,7 @@ export default function MarketPage() {
             </AnimatedSection>
 
             {/* 🔹 FINAL CTA */}
-            <div className="py-24 bg-slate-900 text-white text-center px-6">
+            <div className="py-24 bg-slate-800 text-white text-center px-6">
                 <h2 className="text-3xl md:text-4xl font-bold mb-8">Establish Your Position</h2>
                 <div className="flex flex-col sm:flex-row justify-center gap-4">
                     <Link href="/technology" className="px-6 py-3 md:px-8 md:py-4 bg-blue-600 text-white font-bold rounded hover:bg-blue-500 transition-colors text-sm md:text-base">

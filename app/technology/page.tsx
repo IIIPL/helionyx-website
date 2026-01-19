@@ -18,7 +18,7 @@ export default function TechnologyPage() {
             <Navbar />
 
             {/* 🔹 HERO SECTION (VIDEO + DARK OVERLAY) */}
-            <div className="relative h-[100dvh] min-h-[600px] flex items-center justify-center overflow-hidden bg-slate-900">
+            <div className="relative h-[100dvh] min-h-[600px] flex items-center justify-center overflow-hidden bg-slate-800">
                 {/* Background Video */}
                 <div className="absolute inset-0 z-0">
                     <video
@@ -116,7 +116,7 @@ export default function TechnologyPage() {
                         </div>
                     </div>
                     {/* Core Innovation Visual */}
-                    <div className="relative h-[250px] md:h-[400px] w-full bg-slate-900 rounded-lg overflow-hidden shadow-2xl flex items-center justify-center border border-slate-800">
+                    <div className="relative h-[250px] md:h-[400px] w-full bg-slate-800 rounded-lg overflow-hidden shadow-2xl flex items-center justify-center border border-slate-700">
                         <Image
                             src="/images/techno/high-voltage-electrical-arcs-experiment.png"
                             alt="Pulsed Plasma Experiment"
@@ -138,7 +138,7 @@ export default function TechnologyPage() {
                     <span className="text-blue-600 font-bold tracking-widest text-xs uppercase mb-6 md:mb-8 block">Performance Snapshot</span>
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
                         {[
-                            { val: "15–22", unit: "kWh/kg H₂", label: "Pilot-validated energy input range" },
+                            { val: "15–35", unit: "kWh/kg H₂", label: "Pilot-validated energy input range" },
                             { val: "~70%", unit: "Reduction", label: "vs conventional electrolysis" },
                             { val: "Sub-$2", unit: "/kg LCOH", label: "Trajectory under industrial tariffs" },
                             { val: "25–50", unit: "kg/hr", label: "Linear, modular scale architecture" },
@@ -206,7 +206,7 @@ export default function TechnologyPage() {
                     <h2 className="text-3xl font-bold mb-12 text-center text-slate-900">Technical Advantages</h2>
                     <div className="grid md:grid-cols-3 gap-8">
                         {[
-                            { title: "Energy Efficiency", desc: "15–22 kWh/kg versus 50–55 kWh/kg for conventional electrolysis." },
+                            { title: "Energy Efficiency", desc: "15–35 kWh/kg versus 50–55 kWh/kg for conventional electrolysis." },
                             { title: "No Precious Metals", desc: "Avoids platinum-group metals, reducing cost volatility and supply-chain risk." },
                             { title: "Modular by Design", desc: "25–50 kg/hour units scale linearly. A 500 kg/hour system uses multiple identical modules." },
                             { title: "Near-Ambient Operation", desc: "Atmospheric pressure and moderate operating temperatures reduce safety and cooling complexity." },
@@ -240,7 +240,7 @@ export default function TechnologyPage() {
                             </thead>
                             <tbody className="divide-y divide-slate-100">
                                 {[
-                                    { metric: "Energy Input", conv: "50–55 kWh/kg", hel: "15–22 kWh/kg" },
+                                    { metric: "Energy Input", conv: "50–55 kWh/kg", hel: "15–35 kWh/kg" },
                                     { metric: "Typical CAPEX", conv: "$1,000–1,500 / kW", hel: "Comparable, lower LCOH" },
                                     { metric: "Catalysts", conv: "Platinum-group metals", hel: "Common materials" },
                                     { metric: "Architecture", conv: "Centralized", hel: "Modular / Distributed" },
@@ -341,7 +341,7 @@ export default function TechnologyPage() {
             </AnimatedSection>
 
             {/* 🔹 FINAL CTA */}
-            <div className="py-24 bg-slate-900 text-white text-center px-6">
+            <div className="py-24 bg-slate-800 text-white text-center px-6">
                 <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to learn more?</h2>
                 <div className="flex flex-col sm:flex-row justify-center gap-4 mt-8">
                     <Link href="/contact" className="px-6 py-3 md:px-8 md:py-4 bg-blue-600 text-white font-bold rounded hover:bg-blue-500 transition-colors shadow-lg shadow-blue-900/50 text-sm md:text-base">

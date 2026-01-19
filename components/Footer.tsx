@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
 
 export default function Footer() {
@@ -12,10 +13,18 @@ export default function Footer() {
             <div className="max-w-7xl mx-auto px-6 py-20 grid grid-cols-1 md:grid-cols-4 gap-12 lg:gap-24">
                 {/* Brand Column */}
                 <div className="col-span-1 md:col-span-2 space-y-6">
-                    <Link href="/" className="inline-block text-3xl font-bold tracking-tight text-slate-900 group">
-                        HELIONYX PVT LTD
-                        <span className="block h-1.5 w-12 bg-blue-600 mt-1 rounded-full group-hover:w-32 transition-all duration-300"></span>
-                    </Link>
+                    <div className="space-y-3">
+                        <Link href="/" className="inline-block">
+                            <Image
+                                src="/images/logo.jpeg"
+                                alt="Helionyx Logo"
+                                width={200}
+                                height={64}
+                                className="h-16 w-auto"
+                            />
+                        </Link>
+                        <h2 className="text-xl font-bold tracking-tight text-slate-900">HELIONYX PVT LTD</h2>
+                    </div>
                     <p className="text-lg leading-relaxed max-w-sm text-slate-500 theme-transition">
                         Industrial-scale green hydrogen production engineered for the <span className="text-slate-900 font-semibold">next cost curve</span>.
                     </p>

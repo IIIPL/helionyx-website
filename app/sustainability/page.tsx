@@ -13,7 +13,7 @@ export default function SustainabilityPage() {
             <Navbar />
 
             {/* 🔹 HERO SECTION */}
-            <div className="relative h-[100dvh] min-h-[600px] flex items-center justify-center overflow-hidden bg-slate-900">
+            <div className="relative h-[100dvh] min-h-[600px] flex items-center justify-center overflow-hidden bg-slate-800">
                 {/* Background Video */}
                 <div className="absolute inset-0 z-0">
                     <video
@@ -129,7 +129,7 @@ export default function SustainabilityPage() {
                                 <ArrowRight className="text-slate-300" />
                                 <div className="text-right">
                                     <span className="block text-sm text-green-500 font-bold uppercase">Helionyx</span>
-                                    <span className="text-2xl font-bold text-slate-900">15–22 <span className="text-base text-slate-500 font-normal">kWh/kg</span></span>
+                                    <span className="text-2xl font-bold text-slate-900">15–35 <span className="text-base text-slate-500 font-normal">kWh/kg</span></span>
                                 </div>
                             </div>
                             <p className="text-sm text-slate-600">
@@ -137,7 +137,7 @@ export default function SustainabilityPage() {
                             </p>
                         </div>
 
-                        <h4 className="font-bold text-slate-900 mb-4">By reducing energy input to 15–22 kWh/kg, HELIONYX enables:</h4>
+                        <h4 className="font-bold text-slate-900 mb-4">By reducing energy input to 15–35 kWh/kg, HELIONYX enables:</h4>
                         <ul className="space-y-3">
                             <li className="flex gap-3 items-center text-slate-700">
                                 <Leaf className="w-5 h-5 text-green-500 shrink-0" />
@@ -338,7 +338,7 @@ export default function SustainabilityPage() {
             </AnimatedSection>
 
             {/* 🔹 FINAL CTA */}
-            <div className="py-16 md:py-24 bg-slate-900 text-white text-center px-6">
+            <div className="py-16 md:py-24 bg-slate-800 text-white text-center px-6">
                 <p className="text-xl text-slate-300 max-w-2xl mx-auto mb-8">
                     <span className="block text-white font-bold text-2xl mb-4">Sustainability at HELIONYX is not a separate initiative.</span>
                     It is the result of engineering systems that consume less energy, scale responsibly, and integrate cleanly into real industrial environments.

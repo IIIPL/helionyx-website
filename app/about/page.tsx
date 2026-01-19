@@ -14,7 +14,7 @@ export default function AboutPage() {
             <Navbar />
 
             {/* 🔹 HERO SECTION */}
-            <div className="relative h-[100dvh] min-h-[600px] flex items-center justify-center overflow-hidden bg-slate-900">
+            <div className="relative h-[100dvh] min-h-[600px] flex items-center justify-center overflow-hidden bg-slate-800">
                 {/* Background Image */}
                 <div className="absolute inset-0 z-0">
                     <Image
@@ -51,7 +51,7 @@ export default function AboutPage() {
                         transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
                         className="text-lg md:text-xl text-slate-300 leading-relaxed max-w-3xl mx-auto"
                     >
-                        HELIONYX is a hydrogen technology and deployment platform developed within the H2-GLOBE climate-tech ecosystem, focused on translating advanced energy systems into scalable, commercially viable hydrogen solutions.
+                        HELIONYX is a hydrogen technology and deployment platform developed through strategic partnerships in the climate-tech sector, focused on translating advanced energy systems into scalable, commercially viable hydrogen solutions.
                     </motion.p>
                 </div>
             </div>
@@ -66,7 +66,7 @@ export default function AboutPage() {
                                 HELIONYX is a clean hydrogen technology company focused on industrial-scale deployment, economic viability, and real-world execution.
                             </p>
                             <p>
-                                The company was developed within <span className="font-bold text-slate-900">H2‑GLOBE</span>, a global green-technology organization with operations across North America and Europe, and builds on a foundation of proprietary, IP-protected climate technologies.
+                                The company was developed through partnerships with global green-technology organizations with operations across North America and Europe, and builds on a foundation of proprietary, IP-protected climate technologies.
                             </p>
                             <div className="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-600">
                                 <h4 className="font-bold text-blue-900 mb-2">HELIONYX’s role is clear:</h4>
@@ -99,9 +99,9 @@ export default function AboutPage() {
                         />
                     </div>
                     <div className="order-1 lg:order-2">
-                        <h2 className="text-3xl font-bold mb-6 text-slate-900">Built within the H2-GLOBE ecosystem</h2>
+                        <h2 className="text-3xl font-bold mb-6 text-slate-900">Built on proven climate-technology foundations</h2>
                         <p className="text-lg text-slate-600 mb-6">
-                            H2-GLOBE is a climate-technology company focused on developing integrated energy systems designed to deliver:
+                            Our technology foundation focuses on developing integrated energy systems designed to deliver:
                         </p>
                         <ul className="space-y-4 mb-8">
                             <li className="flex gap-3 items-center text-slate-700">
@@ -122,7 +122,7 @@ export default function AboutPage() {
                             </li>
                         </ul>
                         <p className="text-slate-600">
-                            HELIONYX is built on this foundation, with a specific mandate to commercialize hydrogen and hydrogen-derived solutions using technologies developed and refined within the H2-GLOBE ecosystem.
+                            HELIONYX is built on this foundation, with a specific mandate to commercialize hydrogen and hydrogen-derived solutions using proven advanced technologies.
                         </p>
                     </div>
                 </div>
@@ -134,7 +134,7 @@ export default function AboutPage() {
                     <div>
                         <h2 className="text-3xl font-bold mb-6 text-slate-900">Proven climate-technology capabilities</h2>
                         <p className="text-lg text-slate-600 mb-6">
-                            HELIONYX leverages advanced technologies originating within H2-GLOBE for:
+                            HELIONYX leverages proven advanced technologies for:
                         </p>
                         <ul className="grid grid-cols-1 gap-3 mb-8">
                             <li className="flex gap-3 items-center bg-slate-50 p-4 rounded-lg border border-slate-100">
@@ -181,7 +181,7 @@ export default function AboutPage() {
                             <div className="mb-12">
                                 <h2 className="text-2xl font-bold mb-4 text-slate-900">Flexible production across feedstocks</h2>
                                 <p className="text-slate-600 mb-4">
-                                    Through the broader H2-GLOBE technology platform, HELIONYX supports hydrogen and methanol production from a range of feedstocks, including:
+                                    HELIONYX supports hydrogen and methanol production from a range of feedstocks, including:
                                 </p>
                                 <ul className="text-sm grid grid-cols-2 gap-2 text-slate-700 font-medium mb-4">
                                     <li>• Associated petroleum gas (APG)</li>
@@ -221,7 +221,7 @@ export default function AboutPage() {
                     <div>
                         <h2 className="text-3xl font-bold mb-6 text-slate-900">Enabling hydrogen adoption beyond production</h2>
                         <p className="text-lg text-slate-600 mb-6">
-                            HELIONYX also builds on advanced solutions within the H2-GLOBE ecosystem for hydrogen mobility and infrastructure.
+                            HELIONYX also integrates advanced solutions for hydrogen mobility and infrastructure applications.
                         </p>
                         <h4 className="font-bold text-slate-900 mb-4">These include system concepts that enable:</h4>
                         <ul className="space-y-4 mb-8">
@@ -256,9 +256,9 @@ export default function AboutPage() {
             {/* 🔹 SECTION 7: BRANDS */}
             <AnimatedSection className="py-24 bg-slate-50 border-y border-slate-200">
                 <div className="max-w-6xl mx-auto px-6 text-center">
-                    <h2 className="text-3xl font-bold mb-12 text-slate-900">HELIONYX, H2-GLOBE, and ENERVOXA</h2>
+                    <h2 className="text-3xl font-bold mb-12 text-slate-900">HELIONYX and our ecosystem</h2>
                     <p className="text-lg text-slate-600 mb-12 max-w-3xl mx-auto">
-                        HELIONYX operates as part of a broader clean-energy ecosystem. Each brand addresses different segments of the energy transition, while sharing common technology foundations and long-term sustainability objectives.
+                        HELIONYX is our specialized hydrogen technology and deployment platform, focusing on delivering industrial-scale solutions for the global energy transition.
                     </p>
                     <div className="grid md:grid-cols-3 gap-8">
                         <div className="bg-white p-8 rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow">
@@ -266,21 +266,21 @@ export default function AboutPage() {
                                 <Zap className="w-6 h-6 text-blue-600" />
                             </div>
                             <h3 className="text-xl font-bold text-slate-900 mb-3">HELIONYX</h3>
-                            <p className="text-slate-600 text-sm">Hydrogen production and deployment platform</p>
+                            <p className="text-slate-600 text-sm">Industrial-scale hydrogen production and deployment</p>
                         </div>
                         <div className="bg-white p-8 rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow">
                             <div className="h-12 w-12 bg-green-100 rounded-lg flex items-center justify-center mx-auto mb-6">
                                 <Globe2 className="w-6 h-6 text-green-600" />
                             </div>
-                            <h3 className="text-xl font-bold text-slate-900 mb-3">H2-GLOBE</h3>
-                            <p className="text-slate-600 text-sm">Core climate-technology development and systems innovation</p>
+                            <h3 className="text-xl font-bold text-slate-900 mb-3">Global Partnerships</h3>
+                            <p className="text-slate-600 text-sm">Technology development and deployment across North America and Europe</p>
                         </div>
                         <div className="bg-white p-8 rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow">
                             <div className="h-12 w-12 bg-orange-100 rounded-lg flex items-center justify-center mx-auto mb-6">
                                 <Flame className="w-6 h-6 text-orange-600" />
                             </div>
-                            <h3 className="text-xl font-bold text-slate-900 mb-3">EnerVoxa</h3>
-                            <p className="text-slate-600 text-sm">Complementary energy and conversion technologies</p>
+                            <h3 className="text-xl font-bold text-slate-900 mb-3">Energy Solutions</h3>
+                            <p className="text-slate-600 text-sm">Complementary energy conversion and mobility technologies</p>
                         </div>
                     </div>
                 </div>
@@ -313,7 +313,7 @@ export default function AboutPage() {
                     </div>
 
                     {/* Mission */}
-                    <div className="bg-slate-900 p-10 rounded-2xl text-white">
+                    <div className="bg-slate-800 p-10 rounded-2xl text-white">
                         <h2 className="text-3xl font-bold mb-6">Our Mission</h2>
                         <p className="text-lg text-slate-300 mb-8">
                             HELIONYX exists to bridge the gap between advanced climate technology and real-world hydrogen economics.
