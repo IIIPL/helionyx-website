@@ -14,7 +14,7 @@ export default function PartnershipPage() {
             <Navbar />
 
             {/* 🔹 HERO SECTION */}
-            <div className="relative h-[100dvh] min-h-[600px] flex items-center justify-center overflow-hidden bg-slate-900">
+            <div className="relative h-[100dvh] min-h-[600px] flex items-center justify-center overflow-hidden bg-slate-800">
                 {/* Background Video */}
                 <div className="absolute inset-0 z-0">
                     <video
@@ -240,13 +240,13 @@ export default function PartnershipPage() {
 
                         <div className="bg-slate-50 p-6 rounded-lg border border-slate-100 mb-6">
                             <h4 className="text-xl font-bold text-blue-600 flex items-center gap-2 mb-2">
-                                <Globe2 className="w-5 h-5" /> H2-GLOBE
+                                <Globe2 className="w-5 h-5" /> Global Technology Partners
                             </h4>
                             <p className="text-slate-600 text-sm mb-4">
                                 A climate-technology organization operating across North America and Europe, focused on hydrogen and hydrogen-related systems.
                             </p>
                             <p className="text-slate-800 text-sm font-medium">
-                                H2-GLOBE contributes international deployment experience, cross-border operational insight, and ecosystem connectivity, strengthening HELIONYX’s global perspective.
+                                Our international partners contribute deployment experience, cross-border operational insight, and global connectivity, strengthening HELIONYX's worldwide perspective.
                             </p>
                         </div>
 
@@ -479,7 +479,7 @@ export default function PartnershipPage() {
 
 
             {/* 🔹 FINAL CTA */}
-            <div className="py-16 md:py-24 bg-slate-900 text-white text-center px-6">
+            <div className="py-16 md:py-24 bg-slate-800 text-white text-center px-6">
                 <h2 className="text-3xl md:text-4xl font-bold mb-8">Ready to Partner?</h2>
                 <p className="text-xl text-slate-300 max-w-2xl mx-auto mb-10">
                     Let’s build a scalable, commercially viable green hydrogen future together.

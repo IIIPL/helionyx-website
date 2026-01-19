@@ -13,7 +13,7 @@ export default function ContactPage() {
             <Navbar />
 
             {/* 🔹 HERO SECTION */}
-            <div className="relative h-[100dvh] min-h-[600px] flex items-center justify-center overflow-hidden bg-slate-900">
+            <div className="relative h-[100dvh] min-h-[600px] flex items-center justify-center overflow-hidden bg-slate-800">
                 {/* Background Image */}
                 <div className="absolute inset-0 z-0">
                     <Image
@@ -228,7 +228,7 @@ export default function ContactPage() {
             </AnimatedSection>
 
             {/* 🔹 FINAL STATEMENT & CTA */}
-            <div className="py-16 md:py-24 bg-slate-900 text-white text-center px-6">
+            <div className="py-16 md:py-24 bg-slate-800 text-white text-center px-6">
                 <p className="text-xl text-slate-300 max-w-2xl mx-auto mb-8">
                     <span className="block text-white font-bold text-2xl mb-4">HELIONYX values clarity, seriousness, and execution.</span>
                     If you are exploring real-world hydrogen deployment, we look forward to connecting.

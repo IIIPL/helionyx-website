@@ -10,7 +10,7 @@ import { ArrowRight, CheckCircle2, Zap, BarChart3, Layers, Globe2, ShieldCheck, 
 
 export default function Home() {
     return (
-        <main className="bg-white min-h-screen text-slate-900 selection:bg-blue-100 font-sans">
+        <main className="bg-white min-h-screen text-slate-900 selection:bg-blue-100 font-sans w-full overflow-x-hidden">
             <Navbar />
             <AnimatedHero />
 
@@ -27,7 +27,7 @@ export default function Home() {
                         {[
                             { val: "~70%", label: "Lower Energy Input", sub: "Compared to conventional electrolysis", icon: Zap },
                             { val: "$1.5–2.0", label: "/ kg LCOH", sub: "Target production economics at scale", icon: BarChart3 },
-                            { val: "15–22", label: "kWh / kg H₂", sub: "Pilot-validated energy input range", icon: CheckCircle2 },
+                            { val: "15–35", label: "kWh / kg H₂", sub: "Pilot-validated energy input range", icon: CheckCircle2 },
                             { val: "Modular", label: "by Design", sub: "Built for distributed industrial deployment", icon: Layers },
                         ].map((m, i) => (
                             <div key={i} className="bg-white border border-slate-200 p-6 md:p-8 rounded-xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
@@ -127,7 +127,7 @@ export default function Home() {
                         </div>
 
                         {/* Right: Premise Box */}
-                        <div className="bg-slate-900 text-white p-6 md:p-14 rounded-3xl shadow-2xl relative overflow-hidden group">
+                        <div className="bg-slate-800 text-white p-6 md:p-14 rounded-3xl shadow-2xl relative overflow-hidden group">
                             {/* Abstract Background */}
                             {/* Abstract Background - REMOVED for cleaner look */}
                             <div className="absolute inset-0 opacity-10 bg-gradient-to-br from-blue-500/20 to-purple-500/20 mix-blend-overlay"></div>
@@ -231,7 +231,7 @@ export default function Home() {
                             fill
                             className="object-cover blur-[3px] scale-105 group-hover:blur-none group-hover:scale-110 transition-all duration-700"
                         />
-                        <div className="absolute inset-0 bg-black/60 group-hover:bg-black/40 transition-all duration-700 flex items-center justify-center">
+                        <div className="absolute inset-0 bg-black/40 group-hover:bg-black/25 transition-all duration-700 flex items-center justify-center">
                             <h3 className="text-2xl md:text-4xl font-bold text-white tracking-widest uppercase text-center drop-shadow-2xl">Engineered for<br />Industrial Reality</h3>
                         </div>
                     </div>
@@ -262,7 +262,7 @@ export default function Home() {
                                         </div>
                                         <div>
                                             <div className="text-green-600 text-xs uppercase tracking-wider font-bold mb-1">HELIONYX</div>
-                                            <div className="text-green-700 font-bold bg-green-50 inline-block px-2 py-0.5 rounded">15–22 kWh/kg</div>
+                                            <div className="text-green-700 font-bold bg-green-50 inline-block px-2 py-0.5 rounded">15–35 kWh/kg</div>
                                         </div>
                                     </div>
                                 </div>
@@ -301,7 +301,7 @@ export default function Home() {
                             {/* Desktop Table (>= md) */}
                             <div className="hidden md:block w-full rounded-xl overflow-hidden shadow-lg border border-slate-200 mb-6 bg-white">
                                 <table className="w-full text-left text-sm min-w-[500px]">
-                                    <thead className="bg-slate-900 text-slate-200">
+                                    <thead className="bg-slate-800 text-slate-200">
                                         <tr>
                                             <th className="p-4 font-semibold">Metric</th>
                                             <th className="p-4 font-semibold opacity-70">Conventional</th>
@@ -312,7 +312,7 @@ export default function Home() {
                                         <tr>
                                             <td className="p-4 font-medium text-slate-900">Electricity</td>
                                             <td className="p-4 text-slate-500">50–55 kWh/kg</td>
-                                            <td className="p-4 font-bold text-green-700 bg-green-50">15–22 kWh/kg</td>
+                                            <td className="p-4 font-bold text-green-700 bg-green-50">15–35 kWh/kg</td>
                                         </tr>
                                         <tr>
                                             <td className="p-4 font-medium text-slate-900">Cost (LCOH)</td>
@@ -451,7 +451,7 @@ export default function Home() {
                     fill
                     className="object-cover"
                 />
-                <div className="absolute inset-0 bg-black/30 md:bg-black/10" /> {/* Subtle tint */}
+                <div className="absolute inset-0 bg-black/20 md:bg-black/5" /> {/* Subtle tint */}
 
                 <div className="relative z-10 text-center max-w-4xl mx-auto px-6">
                     <div className="bg-white/10 backdrop-blur-xl border border-white/20 p-6 md:p-16 rounded-2xl md:rounded-3xl shadow-2xl">
