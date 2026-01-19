@@ -96,7 +96,7 @@ export default function Home() {
                         </div>
                         <div className="relative h-[250px] md:h-[300px] w-full rounded-2xl overflow-hidden shadow-2xl border border-slate-100 transform hover:scale-[1.02] transition-transform duration-500 delay-100">
                             <Image
-                                src="/images/home page/Hydrogen+Production+Costs.jpg"
+                                src="/images/home%20page/new.png"
                                 alt="Hydrogen Costs"
                                 fill
                                 className="object-contain bg-white p-4"
