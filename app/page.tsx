@@ -27,7 +27,7 @@ export default function Home() {
                         {[
                             { val: "~70%", label: "Lower Energy Input", sub: "Compared to conventional electrolysis", icon: Zap },
                             { val: "$1.5–2.0", label: "/ kg LCOH", sub: "Target production economics at scale", icon: BarChart3 },
-                            { val: "15–35", label: "kWh / kg H₂", sub: "Pilot-validated energy input range", icon: CheckCircle2 },
+                            { val: "30–35", label: "kWh / kg H₂", sub: "Pilot-validated energy input range", icon: CheckCircle2 },
                             { val: "Modular", label: "by Design", sub: "Built for distributed industrial deployment", icon: Layers },
                         ].map((m, i) => (
                             <div key={i} className="bg-white border border-slate-200 p-6 md:p-8 rounded-xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
@@ -127,16 +127,16 @@ export default function Home() {
                         </div>
 
                         {/* Right: Premise Box */}
-                        <div className="bg-slate-800 text-white p-6 md:p-14 rounded-3xl shadow-2xl relative overflow-hidden group">
+                        <div className="bg-slate-100 text-slate-900 p-6 md:p-14 rounded-3xl shadow-2xl relative overflow-hidden group">
                             {/* Abstract Background */}
                             {/* Abstract Background - REMOVED for cleaner look */}
                             <div className="absolute inset-0 opacity-10 bg-gradient-to-br from-blue-500/20 to-purple-500/20 mix-blend-overlay"></div>
 
                             <div className="relative z-10">
-                                <p className="text-blue-200 text-xs md:text-sm font-bold uppercase tracking-widest mb-4 md:mb-6">HELIONYX Premise</p>
-                                <h3 className="text-2xl md:text-5xl font-bold mb-6 md:mb-8 leading-tight">Lower energy input is the breakthrough.</h3>
+                                <p className="text-blue-600 text-xs md:text-sm font-bold uppercase tracking-widest mb-4 md:mb-6">HELIONYX Premise</p>
+                                <h3 className="text-2xl md:text-5xl font-bold mb-6 md:mb-8 leading-tight text-slate-900">Lower energy input is the breakthrough.</h3>
                                 <div className="h-1.5 w-24 bg-gradient-to-r from-blue-500 to-green-500 rounded-full mb-6 md:mb-8"></div>
-                                <p className="text-slate-300 text-base md:text-lg">
+                                <p className="text-slate-700 text-base md:text-lg">
                                     HELIONYX is built on a different premise. We don't just optimize components; we fundamentally change the energy equation.
                                 </p>
                             </div>
@@ -194,17 +194,17 @@ export default function Home() {
             </AnimatedSection>
 
             {/* 🔹 POSITIONING (Not an Electrolyzer) */}
-            <AnimatedSection className="relative py-16 md:py-32 bg-slate-950 text-white isolation-auto">
+            <AnimatedSection className="relative py-16 md:py-32 bg-blue-100 text-slate-900 isolation-auto">
                 {/* Background Image Parallax */}
                 {/* Background Gradient - Cleaner, Premium */}
-                <div className="absolute inset-0 z-0 bg-gradient-to-b from-slate-950 via-slate-900/40 to-slate-950" />
-                <div className="absolute inset-0 z-0 bg-gradient-to-b from-slate-950 via-transparent to-slate-950" />
+                <div className="absolute inset-0 z-0 bg-gradient-to-b from-blue-100 via-sky-100/40 to-blue-100" />
+                <div className="absolute inset-0 z-0 bg-gradient-to-b from-blue-100 via-transparent to-blue-100" />
 
                 <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
                     <div className="mb-10 md:mb-14">
-                        <span className="text-green-500 font-bold tracking-widest text-xs uppercase mb-4 block">Positioning</span>
-                        <h2 className="text-3xl md:text-7xl font-extrabold mb-6 md:mb-8 tracking-tight">This is not an <br />electrolyzer.</h2>
-                        <p className="text-lg md:text-2xl text-slate-300 font-light max-w-3xl mx-auto leading-relaxed">
+                        <span className="text-green-600 font-bold tracking-widest text-xs uppercase mb-4 block">Positioning</span>
+                        <h2 className="text-3xl md:text-7xl font-extrabold mb-6 md:mb-8 tracking-tight text-slate-900">This is not an <br />electrolyzer.</h2>
+                        <p className="text-lg md:text-2xl text-slate-600 font-light max-w-3xl mx-auto leading-relaxed">
                             HELIONYX redefines the energy economics of hydrogen production by addressing the core constraint limiting scale.
                         </p>
                     </div>
@@ -215,10 +215,10 @@ export default function Home() {
                             { title: "No Mega-Plants", desc: "No huge centralized facilities required", icon: Factory },
                             { title: "No Overbuild", desc: "Reduced renewable capacity needs", icon: Zap },
                         ].map((item, i) => (
-                            <div key={i} className="bg-white/5 backdrop-blur-md border border-white/10 p-6 md:p-8 rounded-2xl hover:bg-white/10 transition-colors duration-300 group">
-                                <item.icon className="w-10 h-10 md:w-12 md:h-12 text-blue-400 mb-4 md:mb-6 group-hover:scale-110 transition-transform" />
-                                <h3 className="text-lg md:text-xl font-bold mb-2">{item.title}</h3>
-                                <p className="text-slate-400 text-sm leading-relaxed">{item.desc}</p>
+                            <div key={i} className="bg-white border border-slate-200 p-6 md:p-8 rounded-2xl hover:shadow-lg transition-all duration-300 group">
+                                <item.icon className="w-10 h-10 md:w-12 md:h-12 text-blue-600 mb-4 md:mb-6 group-hover:scale-110 transition-transform" />
+                                <h3 className="text-lg md:text-xl font-bold mb-2 text-slate-900">{item.title}</h3>
+                                <p className="text-slate-600 text-sm leading-relaxed">{item.desc}</p>
                             </div>
                         ))}
                     </div>
@@ -239,7 +239,7 @@ export default function Home() {
             </AnimatedSection>
 
             {/* 🔹 PROVEN PERFORMANCE TABLE + INDIA STRATEGY */}
-            <div className="bg-slate-50 py-16 md:py-32 border-y border-slate-200">
+            <div className="bg-gradient-to-br from-sky-100 to-blue-100 py-16 md:py-32 border-y border-blue-300/50">
                 <AnimatedSection className="max-w-7xl mx-auto px-6 mb-16 md:mb-24">
                     <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
                         {/* Table Area */}
@@ -262,7 +262,7 @@ export default function Home() {
                                         </div>
                                         <div>
                                             <div className="text-green-600 text-xs uppercase tracking-wider font-bold mb-1">HELIONYX</div>
-                                            <div className="text-green-700 font-bold bg-green-50 inline-block px-2 py-0.5 rounded">15–35 kWh/kg</div>
+                                            <div className="text-green-700 font-bold bg-green-50 inline-block px-2 py-0.5 rounded">30–35 kWh/kg</div>
                                         </div>
                                     </div>
                                 </div>
@@ -312,7 +312,7 @@ export default function Home() {
                                         <tr>
                                             <td className="p-4 font-medium text-slate-900">Electricity</td>
                                             <td className="p-4 text-slate-500">50–55 kWh/kg</td>
-                                            <td className="p-4 font-bold text-green-700 bg-green-50">15–35 kWh/kg</td>
+                                            <td className="p-4 font-bold text-green-700 bg-green-50">30–35 kWh/kg</td>
                                         </tr>
                                         <tr>
                                             <td className="p-4 font-medium text-slate-900">Cost (LCOH)</td>

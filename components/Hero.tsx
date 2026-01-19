@@ -17,10 +17,10 @@ export default function AnimatedHero() {
                     playsInline
                     className="absolute inset-0 w-full h-full object-cover opacity-80 blur-[2px]"
                 >
-                    <source src="/video/Visualizing_Green_Hydrogen_Technology.mp4" type="video/mp4" />
+                    <source src="/video/home.mp4" type="video/mp4" />
                 </video>
-                {/* Dark gradient overlay */}
-                <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/50 to-black/80" />
+                {/* Dark gradient overlay for text visibility */}
+                <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/30 to-black/60" />
 
                 {/* Grainy Noise Overlay for Texture */}
                 <div className="absolute inset-0 opacity-20 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] mix-blend-overlay"></div>
@@ -37,10 +37,10 @@ export default function AnimatedHero() {
                     {/* Tagline */}
                     <motion.div
                         variants={fadeUp}
-                        className="flex items-center gap-2 mb-8 border border-white/20 px-4 py-1.5 rounded-full bg-white/5 backdrop-blur-sm"
+                        className="flex items-center gap-2 mb-8 border border-white/30 px-4 py-1.5 rounded-full bg-black/40 backdrop-blur-md"
                     >
                         <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse shadow-[0_0_10px_rgba(34,197,94,0.8)]" />
-                        <span className="text-xs font-bold uppercase tracking-widest text-green-400">NEXT-GENERATION HYDROGEN PLATFORM</span>
+                        <span className="text-xs font-bold uppercase tracking-widest text-green-300">NEXT-GENERATION HYDROGEN PLATFORM</span>
                     </motion.div>
 
                     {/* Headline */}
@@ -57,7 +57,7 @@ export default function AnimatedHero() {
                     {/* Subhead */}
                     <motion.p
                         variants={fadeUp}
-                        className="text-lg md:text-xl text-slate-300 leading-relaxed max-w-3xl mx-auto mb-10 font-light"
+                        className="text-xl md:text-2xl lg:text-3xl text-slate-100 leading-relaxed max-w-3xl mx-auto mb-10 font-light"
                     >
                         HELIONYX is developing a next-generation hydrogen production platform designed to fundamentally reduce energy consumption and unlock economically viable green hydrogen for industrial deployment.
                     </motion.p>

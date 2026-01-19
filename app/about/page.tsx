@@ -313,27 +313,27 @@ export default function AboutPage() {
                     </div>
 
                     {/* Mission */}
-                    <div className="bg-slate-800 p-10 rounded-2xl text-white">
-                        <h2 className="text-3xl font-bold mb-6">Our Mission</h2>
-                        <p className="text-lg text-slate-300 mb-8">
+                    <div className="bg-gradient-to-br from-sky-100 to-blue-100 p-10 rounded-2xl text-slate-900 border border-blue-200">
+                        <h2 className="text-3xl font-bold mb-6 text-slate-900">Our Mission</h2>
+                        <p className="text-lg text-slate-700 mb-8">
                             HELIONYX exists to bridge the gap between advanced climate technology and real-world hydrogen economics.
                         </p>
                         <ul className="space-y-3 mb-8">
                             <li className="flex gap-3 items-start">
-                                <ArrowRight className="w-5 h-5 text-blue-400 mt-1 shrink-0" />
-                                <span>Enable scalable, cost-effective hydrogen production</span>
+                                <ArrowRight className="w-5 h-5 text-blue-600 mt-1 shrink-0" />
+                                <span className="text-slate-800">Enable scalable, cost-effective hydrogen production</span>
                             </li>
                             <li className="flex gap-3 items-start">
-                                <ArrowRight className="w-5 h-5 text-blue-400 mt-1 shrink-0" />
-                                <span>Reduce emissions through carbon capture and reuse</span>
+                                <ArrowRight className="w-5 h-5 text-blue-600 mt-1 shrink-0" />
+                                <span className="text-slate-800">Reduce emissions through carbon capture and reuse</span>
                             </li>
                             <li className="flex gap-3 items-start">
-                                <ArrowRight className="w-5 h-5 text-blue-400 mt-1 shrink-0" />
-                                <span>Support industrial decarbonization and clean mobility</span>
+                                <ArrowRight className="w-5 h-5 text-blue-600 mt-1 shrink-0" />
+                                <span className="text-slate-800">Support industrial decarbonization and clean mobility</span>
                             </li>
                             <li className="flex gap-3 items-start">
-                                <ArrowRight className="w-5 h-5 text-blue-400 mt-1 shrink-0" />
-                                <span>Contribute to a more resilient and sustainable global energy system</span>
+                                <ArrowRight className="w-5 h-5 text-blue-600 mt-1 shrink-0" />
+                                <span className="text-slate-800">Contribute to a more resilient and sustainable global energy system</span>
                             </li>
                         </ul>
                     </div>

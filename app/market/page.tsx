@@ -25,7 +25,7 @@ export default function MarketPage() {
                         playsInline
                         className="absolute inset-0 w-full h-full object-cover opacity-80 blur-[2px]"
                     >
-                        <source src="/video/Abstract_Energy_World_Visualization.mp4" type="video/mp4" />
+                        <source src="/video/market.mp4" type="video/mp4" />
                     </video>
                     {/* Dark gradient overlay */}
                     <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/40 to-black/80" />
@@ -361,13 +361,13 @@ export default function MarketPage() {
             </AnimatedSection>
 
             {/* 🔹 FINAL CTA */}
-            <div className="py-24 bg-slate-800 text-white text-center px-6">
-                <h2 className="text-3xl md:text-4xl font-bold mb-8">Establish Your Position</h2>
+            <div className="py-24 bg-gradient-to-br from-sky-200 to-blue-200 text-slate-900 text-center px-6 border-t border-blue-400/50">
+                <h2 className="text-3xl md:text-4xl font-bold mb-8 text-slate-900">Establish Your Position</h2>
                 <div className="flex flex-col sm:flex-row justify-center gap-4">
                     <Link href="/technology" className="px-6 py-3 md:px-8 md:py-4 bg-blue-600 text-white font-bold rounded hover:bg-blue-500 transition-colors text-sm md:text-base">
                         Explore the Technology
                     </Link>
-                    <Link href="/partnership" className="px-6 py-3 md:px-8 md:py-4 bg-transparent border border-white/20 text-white font-bold rounded hover:bg-white/10 transition-colors text-sm md:text-base">
+                    <Link href="/partnership" className="px-6 py-3 md:px-8 md:py-4 bg-transparent border border-slate-400 text-slate-900 font-bold rounded hover:bg-slate-300/50 transition-colors text-sm md:text-base">
                         View Partnership Models
                     </Link>
                 </div>
