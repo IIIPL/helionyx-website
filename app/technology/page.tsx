@@ -28,7 +28,7 @@ export default function TechnologyPage() {
                         playsInline
                         className="absolute inset-0 w-full h-full object-cover opacity-80"
                     >
-                        <source src="/video/Untitled video - Made with Clipchamp (1).mp4" type="video/mp4" />
+                        <source src="/video/technology.mp4" type="video/mp4" />
                     </video>
                     {/* Dark gradient overlay per user request */}
                     <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/50 to-black/80" />
@@ -44,7 +44,7 @@ export default function TechnologyPage() {
                         transition={{ duration: 0.8, ease: "easeOut" }}
                         className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6 md:mb-8"
                     >
-                        A New Hydrogen Production Pathway
+                        A New <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-cyan-300 to-green-400">Hydrogen Production</span> Pathway
                     </motion.h1>
                     <motion.p
                         initial={{ opacity: 0, y: 20 }}
@@ -52,7 +52,7 @@ export default function TechnologyPage() {
                         transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
                         className="text-lg md:text-xl text-slate-300 leading-relaxed max-w-3xl mx-auto"
                     >
-                        HELIONYX is developing a next-generation, non-electrolytic hydrogen production platform designed to fundamentally improve the energy economics of green hydrogen for industrial-scale deployment.
+                        <span className="text-cyan-200">HELIONYX</span> is developing a <span className="text-green-300">next-generation, non-electrolytic</span> hydrogen production platform designed to <span className="text-blue-300">fundamentally improve the energy economics</span> of <span className="text-green-400 font-semibold">green hydrogen</span> for industrial-scale deployment.
                     </motion.p>
                 </div>
             </div>
@@ -138,7 +138,7 @@ export default function TechnologyPage() {
                     <span className="text-blue-600 font-bold tracking-widest text-xs uppercase mb-6 md:mb-8 block">Performance Snapshot</span>
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
                         {[
-                            { val: "15–35", unit: "kWh/kg H₂", label: "Pilot-validated energy input range" },
+                            { val: "30–35", unit: "kWh/kg H₂", label: "Pilot-validated energy input range" },
                             { val: "~70%", unit: "Reduction", label: "vs conventional electrolysis" },
                             { val: "Sub-$2", unit: "/kg LCOH", label: "Trajectory under industrial tariffs" },
                             { val: "25–50", unit: "kg/hr", label: "Linear, modular scale architecture" },
@@ -206,7 +206,7 @@ export default function TechnologyPage() {
                     <h2 className="text-3xl font-bold mb-12 text-center text-slate-900">Technical Advantages</h2>
                     <div className="grid md:grid-cols-3 gap-8">
                         {[
-                            { title: "Energy Efficiency", desc: "15–35 kWh/kg versus 50–55 kWh/kg for conventional electrolysis." },
+                            { title: "Energy Efficiency", desc: "30–35 kWh/kg versus 50–55 kWh/kg for conventional electrolysis." },
                             { title: "No Precious Metals", desc: "Avoids platinum-group metals, reducing cost volatility and supply-chain risk." },
                             { title: "Modular by Design", desc: "25–50 kg/hour units scale linearly. A 500 kg/hour system uses multiple identical modules." },
                             { title: "Near-Ambient Operation", desc: "Atmospheric pressure and moderate operating temperatures reduce safety and cooling complexity." },
@@ -240,7 +240,7 @@ export default function TechnologyPage() {
                             </thead>
                             <tbody className="divide-y divide-slate-100">
                                 {[
-                                    { metric: "Energy Input", conv: "50–55 kWh/kg", hel: "15–35 kWh/kg" },
+                                    { metric: "Energy Input", conv: "50–55 kWh/kg", hel: "30–35 kWh/kg" },
                                     { metric: "Typical CAPEX", conv: "$1,000–1,500 / kW", hel: "Comparable, lower LCOH" },
                                     { metric: "Catalysts", conv: "Platinum-group metals", hel: "Common materials" },
                                     { metric: "Architecture", conv: "Centralized", hel: "Modular / Distributed" },
@@ -341,13 +341,13 @@ export default function TechnologyPage() {
             </AnimatedSection>
 
             {/* 🔹 FINAL CTA */}
-            <div className="py-24 bg-slate-800 text-white text-center px-6">
-                <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to learn more?</h2>
+            <div className="py-24 bg-gradient-to-br from-sky-100 to-blue-100 text-slate-900 text-center px-6 border-t border-blue-300/50">
+                <h2 className="text-3xl md:text-4xl font-bold mb-6 text-slate-900">Ready to learn more?</h2>
                 <div className="flex flex-col sm:flex-row justify-center gap-4 mt-8">
                     <Link href="/contact" className="px-6 py-3 md:px-8 md:py-4 bg-blue-600 text-white font-bold rounded hover:bg-blue-500 transition-colors shadow-lg shadow-blue-900/50 text-sm md:text-base">
                         Request Technical Brief
                     </Link>
-                    <Link href="/partnership" className="px-6 py-3 md:px-8 md:py-4 bg-transparent border border-white/20 text-white font-bold rounded hover:bg-white/10 transition-colors text-sm md:text-base">
+                    <Link href="/partnership" className="px-6 py-3 md:px-8 md:py-4 bg-transparent border border-slate-400 text-slate-900 font-bold rounded hover:bg-slate-200/50 transition-colors text-sm md:text-base">
                         Partner With Us
                     </Link>
                 </div>

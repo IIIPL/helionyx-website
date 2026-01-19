@@ -129,7 +129,7 @@ export default function SustainabilityPage() {
                                 <ArrowRight className="text-slate-300" />
                                 <div className="text-right">
                                     <span className="block text-sm text-green-500 font-bold uppercase">Helionyx</span>
-                                    <span className="text-2xl font-bold text-slate-900">15–35 <span className="text-base text-slate-500 font-normal">kWh/kg</span></span>
+                                    <span className="text-2xl font-bold text-slate-900">30–35 <span className="text-base text-slate-500 font-normal">kWh/kg</span></span>
                                 </div>
                             </div>
                             <p className="text-sm text-slate-600">
@@ -137,7 +137,7 @@ export default function SustainabilityPage() {
                             </p>
                         </div>
 
-                        <h4 className="font-bold text-slate-900 mb-4">By reducing energy input to 15–35 kWh/kg, HELIONYX enables:</h4>
+                        <h4 className="font-bold text-slate-900 mb-4">By reducing energy input to 30–35 kWh/kg, HELIONYX enables:</h4>
                         <ul className="space-y-3">
                             <li className="flex gap-3 items-center text-slate-700">
                                 <Leaf className="w-5 h-5 text-green-500 shrink-0" />
