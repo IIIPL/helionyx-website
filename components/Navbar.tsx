@@ -58,17 +58,40 @@ export default function Navbar() {
             <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
                 {/* Logo - Image that adapts to scroll state */}
                 <Link href="/" className={cn(
-                    "z-50 transition-all h-10 lg:h-14 flex items-center",
+                    "z-50 transition-all h-10 lg:h-14 flex items-center gap-2",
                     scrolled || isOpen ? "opacity-100" : "opacity-100"
                 )}>
                     <Image
                         src="/images/logo.jpeg"
                         alt="Helionyx Logo"
-                        width={180}
-                        height={56}
+                        width={160}
+                        height={50}
                         priority
-                        className="h-10 lg:h-14 w-auto"
+                        className="h-8 lg:h-12 w-auto object-contain"
                     />
+                    <div className={cn(
+                        "flex flex-col justify-center h-full border-l pl-3 ml-1 py-1",
+                        scrolled || isOpen ? "border-slate-300" : "border-white/30"
+                    )}>
+                        <span className={cn(
+                            "font-bold tracking-[0.15em] text-[0.55rem] uppercase leading-none mb-[1px]",
+                            scrolled || isOpen ? "text-slate-600" : "text-slate-300"
+                        )}>
+                            Clean
+                        </span>
+                        <span className={cn(
+                            "font-bold tracking-[0.15em] text-[0.55rem] uppercase leading-none mb-[1px]",
+                            scrolled || isOpen ? "text-slate-600" : "text-slate-300"
+                        )}>
+                            Energy
+                        </span>
+                        <span className={cn(
+                            "font-bold tracking-[0.15em] text-[0.55rem] uppercase leading-none",
+                            scrolled || isOpen ? "text-blue-600" : "text-blue-400"
+                        )}>
+                            Tech
+                        </span>
+                    </div>
                 </Link>
 
                 {/* Desktop Nav */}

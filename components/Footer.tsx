@@ -14,16 +14,26 @@ export default function Footer() {
                 {/* Brand Column */}
                 <div className="col-span-1 md:col-span-2 space-y-6">
                     <div className="space-y-3">
-                        <Link href="/" className="inline-block">
+                        <Link href="/" className="inline-flex items-center gap-3 group">
                             <Image
                                 src="/images/logo.jpeg"
                                 alt="Helionyx Logo"
-                                width={200}
-                                height={64}
-                                className="h-16 w-auto"
+                                width={160}
+                                height={50}
+                                className="h-12 w-auto object-contain"
                             />
+                            <div className="flex flex-col justify-center h-12 border-l border-slate-300 pl-3 ml-1 py-1">
+                                <span className="font-bold tracking-[0.15em] text-[0.6rem] uppercase leading-none mb-[2px] text-slate-600 group-hover:text-slate-900 transition-colors">
+                                    Clean
+                                </span>
+                                <span className="font-bold tracking-[0.15em] text-[0.6rem] uppercase leading-none mb-[2px] text-slate-600 group-hover:text-slate-900 transition-colors">
+                                    Energy
+                                </span>
+                                <span className="font-bold tracking-[0.15em] text-[0.6rem] uppercase leading-none text-blue-600">
+                                    Tech
+                                </span>
+                            </div>
                         </Link>
-                        <h2 className="text-xl font-bold tracking-tight text-slate-900">HELIONYX PVT LTD</h2>
                     </div>
                     <p className="text-lg leading-relaxed max-w-sm text-slate-500 theme-transition">
                         Industrial-scale green hydrogen production engineered for the <span className="text-slate-900 font-semibold">next cost curve</span>.
