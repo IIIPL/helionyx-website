@@ -70,23 +70,29 @@ export default function Navbar() {
                         className="h-8 lg:h-12 w-auto object-contain"
                     />
                     <div className={cn(
-                        "flex flex-col justify-center h-full border-l pl-3 ml-1 py-1",
+                        "flex flex-col justify-center h-full border-l pl-3 ml-1 py-0.5",
                         scrolled || isOpen ? "border-slate-300" : "border-white/30"
                     )}>
                         <span className={cn(
-                            "font-bold tracking-[0.15em] text-[0.55rem] uppercase leading-none mb-[1px]",
+                            "font-bold tracking-[0.1em] text-[0.45rem] lg:text-[0.55rem] leading-none mb-[1px]",
+                            scrolled || isOpen ? "text-slate-500" : "text-slate-400"
+                        )}>
+                            Next Gen
+                        </span>
+                        <span className={cn(
+                            "font-bold tracking-[0.15em] text-[0.55rem] lg:text-[0.65rem] uppercase leading-none mb-[1px]",
                             scrolled || isOpen ? "text-slate-600" : "text-slate-300"
                         )}>
                             Clean
                         </span>
                         <span className={cn(
-                            "font-bold tracking-[0.15em] text-[0.55rem] uppercase leading-none mb-[1px]",
+                            "font-bold tracking-[0.15em] text-[0.55rem] lg:text-[0.65rem] uppercase leading-none mb-[1px]",
                             scrolled || isOpen ? "text-slate-600" : "text-slate-300"
                         )}>
                             Energy
                         </span>
                         <span className={cn(
-                            "font-bold tracking-[0.15em] text-[0.55rem] uppercase leading-none",
+                            "font-bold tracking-[0.15em] text-[0.55rem] lg:text-[0.65rem] uppercase leading-none",
                             scrolled || isOpen ? "text-blue-600" : "text-blue-400"
                         )}>
                             Tech
