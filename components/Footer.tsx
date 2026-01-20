@@ -22,11 +22,14 @@ export default function Footer() {
                                 height={50}
                                 className="h-12 w-auto object-contain"
                             />
-                            <div className="flex flex-col justify-center h-12 border-l border-slate-300 pl-3 ml-1 py-1">
-                                <span className="font-bold tracking-[0.15em] text-[0.6rem] uppercase leading-none mb-[2px] text-slate-600 group-hover:text-slate-900 transition-colors">
+                            <div className="flex flex-col justify-center h-12 border-l border-slate-300 pl-3 ml-1 py-0.5">
+                                <span className="font-bold tracking-[0.1em] text-[0.5rem] leading-none mb-[1px] text-slate-500 group-hover:text-slate-700 transition-colors">
+                                    Next Gen
+                                </span>
+                                <span className="font-bold tracking-[0.15em] text-[0.6rem] uppercase leading-none mb-[1px] text-slate-600 group-hover:text-slate-900 transition-colors">
                                     Clean
                                 </span>
-                                <span className="font-bold tracking-[0.15em] text-[0.6rem] uppercase leading-none mb-[2px] text-slate-600 group-hover:text-slate-900 transition-colors">
+                                <span className="font-bold tracking-[0.15em] text-[0.6rem] uppercase leading-none mb-[1px] text-slate-600 group-hover:text-slate-900 transition-colors">
                                     Energy
                                 </span>
                                 <span className="font-bold tracking-[0.15em] text-[0.6rem] uppercase leading-none text-blue-600">
