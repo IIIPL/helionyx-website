@@ -366,10 +366,41 @@ export default function PartnershipPage() {
                             <li className="flex gap-3 items-center"><CheckCircle2 className="text-blue-600 w-5 h-5" /> Government and regulatory engagement</li>
                             <li className="flex gap-3 items-center"><CheckCircle2 className="text-blue-600 w-5 h-5" /> Long-term strategic orientation</li>
                         </ul>
-                        <div className="p-6 bg-slate-50 border border-slate-200 rounded-lg">
-                            <h4 className="font-bold text-slate-900 mb-2">Representative Organizations</h4>
-                            <p className="text-slate-600 text-sm font-medium">Reliance Industries, Adani Group, Tata Group, NTPC, Indian Oil Corporation, ONGC</p>
-                            <p className="text-xs text-slate-400 mt-2 italic">(Names are illustrative and do not imply commitments.)</p>
+                        <div className="p-4 md:p-6 bg-slate-50 border border-slate-200 rounded-lg shadow-sm">
+                            <h4 className="font-bold text-slate-900 mb-2 flex items-center gap-2 text-base md:text-lg">
+                                <Users className="w-5 h-5 text-blue-600" />
+                                Representative Organizations
+                            </h4>
+                            <p className="text-slate-600 text-sm font-medium mb-4">
+                                Leading industrial enterprises with capital scale, operational expertise, and long-term strategic commitments to energy transition.
+                            </p>
+
+                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-4">
+                                <div className="flex items-center gap-2 bg-white p-2 rounded border border-slate-100">
+                                    <div className="p-1.5 bg-blue-100 text-blue-600 rounded">
+                                        <Factory className="w-4 h-4" />
+                                    </div>
+                                    <span className="text-xs font-semibold text-slate-700">Heavy Industry</span>
+                                </div>
+                                <div className="flex items-center gap-2 bg-white p-2 rounded border border-slate-100">
+                                    <div className="p-1.5 bg-green-100 text-green-600 rounded">
+                                        <TrendingUp className="w-4 h-4" />
+                                    </div>
+                                    <span className="text-xs font-semibold text-slate-700">Energy Utilities</span>
+                                </div>
+                                <div className="flex items-center gap-2 bg-white p-2 rounded border border-slate-100">
+                                    <div className="p-1.5 bg-amber-100 text-amber-600 rounded">
+                                        <Globe2 className="w-4 h-4" />
+                                    </div>
+                                    <span className="text-xs font-semibold text-slate-700">Global Logistics</span>
+                                </div>
+                                <div className="flex items-center gap-2 bg-white p-2 rounded border border-slate-100">
+                                    <div className="p-1.5 bg-purple-100 text-purple-600 rounded">
+                                        <ShieldCheck className="w-4 h-4" />
+                                    </div>
+                                    <span className="text-xs font-semibold text-slate-700">Public Sector</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div className="relative h-[400px] w-full rounded-lg overflow-hidden shadow-xl border border-slate-100 bg-white">

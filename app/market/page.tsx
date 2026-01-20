@@ -48,7 +48,7 @@ export default function MarketPage() {
                         transition={{ duration: 0.8, ease: "easeOut" }}
                         className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6 md:mb-8 leading-tight"
                     >
-                        Decarbonization Is <br /><span className="text-blue-500">Becoming Structural</span>
+                        Decarbonization Is <br /><span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-green-400">Becoming Structural</span>
                     </motion.h1>
                     <motion.p
                         initial={{ opacity: 0, y: 20 }}
@@ -56,7 +56,7 @@ export default function MarketPage() {
                         transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
                         className="text-lg md:text-xl text-slate-300 leading-relaxed max-w-3xl mx-auto"
                     >
-                        Industrial decarbonization is transitioning from voluntary ambition to mandatory economics, creating sustained demand for low-carbon inputs across global supply chains.
+                        Industrial <span className="text-green-300">decarbonization</span> is transitioning from voluntary ambition to <span className="text-blue-300">mandatory economics</span>, creating sustained demand for <span className="text-green-400 font-semibold">low-carbon inputs</span> across global supply chains.
                     </motion.p>
                 </div>
             </div>

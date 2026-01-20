@@ -27,7 +27,7 @@ export default function AnimatedHero() {
             </div>
 
             {/* 🔹 CONTENT OVERLAY */}
-            <div className="relative z-10 max-w-5xl mx-auto px-6 text-center text-white mt-16">
+            <div className="relative z-10 max-w-5xl mx-auto px-6 text-center text-white mt-16 md:mt-20">
                 <motion.div
                     variants={staggerContainer}
                     initial="hidden"
